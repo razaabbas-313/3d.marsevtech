@@ -261,29 +261,28 @@ model-viewer { position: absolute; inset: 0; z-index: 3; width: 100%; height: 10
 /* ====================================================== */
 /*  WHY 3D  (light, editorial)                             */
 /* ====================================================== */
-.why { background: var(--bg); color: var(--ink-2); padding: var(--section-y) 0; position: relative; }
-.why .h2, .why .h3 { color: var(--ink); }
-.why__grid { display: grid; gap: 56px; }
-.why__statement { font-family: var(--font-display); font-style: italic; font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem); line-height: 1.25; color: var(--ink-2); margin-top: 28px; max-width: 28ch; }
-.why__list { display: grid; gap: 0; align-content: start; }
-.reason { padding: 32px 0 36px; border-top: 1px solid var(--ink); display: grid; gap: 14px; }
-.reason:last-child { border-bottom: 1px solid var(--ink); }
-.reason p { max-width: 50ch; }
-
-/* depth diagram: photo → 3D → AR, three planes in perspective that spread as they enter */
-.layers { position: relative; height: 340px; margin-top: 88px; perspective: 1000px; max-width: 460px; }
-.layer { position: absolute; left: 6%; top: 8%; width: 64%; height: 150px; border: 1px solid rgba(17, 17, 17, .5); border-radius: 2px;
-  transform: rotateX(58deg) rotateZ(-32deg) translateZ(var(--z, 0px)); transition: transform 1.3s var(--ease), background-color .8s; --z: 0px; }
-.layer span { position: absolute; left: 10px; bottom: 8px; font-size: .78rem; font-weight: 600; color: var(--ink); }
-.layer--1 { background: #ECE9E4; background-image: linear-gradient(135deg, rgba(0,0,0,.06) 25%, transparent 25%, transparent 50%, rgba(0,0,0,.06) 50%, rgba(0,0,0,.06) 75%, transparent 75%); background-size: 12px 12px; }
-.layer--2 { background: rgba(255, 255, 255, .85); border-color: var(--accent); background-image: linear-gradient(rgba(180,83,9,.25) 1px, transparent 1px), linear-gradient(90deg, rgba(180,83,9,.25) 1px, transparent 1px); background-size: 20px 20px; }
-.layer--3 { background: var(--accent); border-color: var(--accent); }
-.layer--3 span { color: #fff; }
-.layers.is-in .layer--1 { --z: 0px; }
-.layers.is-in .layer--2 { --z: 70px; transition-delay: .25s; }
-.layers.is-in .layer--3 { --z: 140px; transition-delay: .5s; }
-.layers:hover .layer--2 { --z: 90px; }
-.layers:hover .layer--3 { --z: 180px; }
+.why { position: relative; isolation: isolate; overflow: hidden; background: var(--night-2); color: var(--on-dark-2); padding: var(--section-y) 0; }
+.why__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(60% 55% at 12% 8%, rgba(229, 138, 43, .14), transparent 70%), radial-gradient(50% 50% at 92% 95%, rgba(110, 130, 160, .1), transparent 70%); }
+.why .h2, .why .h3 { color: var(--on-dark); }
+.why__grid { display: grid; gap: 48px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .82rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--amber-hi); margin-bottom: 18px; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--amber); }
+.why__statement { font-size: clamp(1.08rem, 1rem + .4vw, 1.3rem); line-height: 1.55; color: var(--on-dark-2); margin-top: 24px; max-width: 34ch; }
+.ladder { position: relative; display: grid; gap: 14px; margin-top: 40px; max-width: 420px; }
+.ladder::before { content: ""; position: absolute; left: 21px; top: 24px; bottom: 24px; width: 1px; background: linear-gradient(var(--line-d), var(--amber)); }
+.ladder__step { position: relative; display: flex; align-items: center; gap: 16px; padding: 14px 18px 14px 12px; border: 1px solid var(--line-d); border-radius: 14px; background: rgba(238, 233, 225, .03); }
+.ladder__step strong { display: block; font-weight: 600; color: var(--on-dark); }
+.ladder__step span:not(.ladder__no) { display: block; font-size: .92rem; color: var(--on-dark-3); }
+.ladder__no { flex: none; display: grid; place-items: center; width: 20px; height: 20px; margin-left: 2px; border-radius: 50%; background: var(--night-2); border: 1px solid var(--line-d); font-size: .72rem; font-weight: 600; color: var(--on-dark-2); position: relative; z-index: 1; box-sizing: content-box; padding: 4px; }
+.ladder__step--top { border-color: rgba(229, 138, 43, .55); background: linear-gradient(120deg, rgba(229, 138, 43, .16), rgba(229, 138, 43, .04)); box-shadow: 0 10px 40px -18px rgba(229, 138, 43, .55); }
+.ladder__step--top .ladder__no { background: var(--amber); border-color: var(--amber); color: var(--night); }
+.why__list { display: grid; gap: 16px; align-content: start; }
+.reason { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; padding: 26px 24px; border: 1px solid var(--line-d); border-radius: 18px; background: linear-gradient(160deg, rgba(238, 233, 225, .06), rgba(238, 233, 225, .02)); transition: transform .35s var(--ease), border-color .35s, background .35s; }
+.reason:hover { transform: translateY(-3px); border-color: rgba(229, 138, 43, .5); }
+.reason__icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; color: var(--amber-hi); background: rgba(229, 138, 43, .12); border: 1px solid rgba(229, 138, 43, .3); }
+.reason .h3 { margin-bottom: 8px; }
+.reason p { max-width: 52ch; color: var(--on-dark-2); }
+@media (max-width: 519px) { .reason { grid-template-columns: 1fr; gap: 16px; padding: 22px 20px; } }
 
 /* ====================================================== */
 /*  PROCESS                                                */
@@ -403,6 +402,7 @@ model-viewer { position: absolute; inset: 0; z-index: 3; width: 100%; height: 10
 
   .why__grid { grid-template-columns: 1fr 1fr; gap: clamp(48px, 7vw, 120px); align-items: start; }
   .why__lead { position: sticky; top: 110px; }
+  .why__grid { grid-template-columns: 0.9fr 1.1fr; }
 
   .steps { grid-template-columns: repeat(3, 1fr); gap: 48px; padding: 52px 0 0; }
   .steps::before, .steps::after { left: 0; right: 0; top: 6px; bottom: auto; width: auto; height: 1px; }
@@ -432,8 +432,6 @@ model-viewer { position: absolute; inset: 0; z-index: 3; width: 100%; height: 10
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
   .steps::after { transform: none; }
-  .layers .layer--2 { --z: 70px; }
-  .layers .layer--3 { --z: 140px; }
   .step__node { background: var(--amber); }
 }
 
