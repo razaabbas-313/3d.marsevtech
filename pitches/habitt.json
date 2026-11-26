@@ -1,0 +1,348 @@
+{
+  "client": {
+    "slug": "habitt",
+    "brandName": "Habitt Home",
+    "isCustomPitch": true
+  },
+  "hero": {
+    "badge": "Prepared Exclusively for Habitt Home",
+    "headline": "Furniture Deserves More Than a Flat Image.",
+    "subheadline": "We transform ordinary product catalogs into immersive 3D and augmented reality shopping experiences.",
+    "cta": "Book a Free Demo",
+    "secondaryCta": "Explore Your 3D Showroom",
+    "model": {
+      "src": "models/designer-sofa.glb",
+      "alt": "Designer three-seater sofa in cream with accent cushions"
+    }
+  },
+  "whatsapp": {
+    "number": "923000000000",
+    "message": "Hi MarsevTech! I'm interested in the 3D and AR furniture visualization proposal prepared for Habitt Home. I'd like to discuss a free demo."
+  },
+  "contact": {
+    "email": "contact@example.com"
+  },
+  "models": [
+    {
+      "id": "loveseat",
+      "title": "Modern Loveseat",
+      "description": "A compact two-seater with a two-tone base and a mustard accent pillow.",
+      "src": "models/loveseat.glb",
+      "silhouette": "sofa",
+      "dimensions": {
+        "width": 155,
+        "depth": 92,
+        "height": 93,
+        "unit": "cm"
+      },
+      "ar": true,
+      "alt": "Modern loveseat 3D model",
+      "materialIndex": 1,
+      "colorLabel": "Upholstery",
+      "colors": [
+        {
+          "name": "Ivory",
+          "rgba": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "Slate blue",
+          "rgba": [
+            0.102,
+            0.156,
+            0.262,
+            1
+          ]
+        },
+        {
+          "name": "Forest",
+          "rgba": [
+            0.061,
+            0.114,
+            0.07,
+            1
+          ]
+        },
+        {
+          "name": "Clay",
+          "rgba": [
+            0.434,
+            0.15,
+            0.089,
+            1
+          ]
+        },
+        {
+          "name": "Charcoal",
+          "rgba": [
+            0.061,
+            0.061,
+            0.069,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lounge-armchair",
+      "title": "Modern Lounge Armchair",
+      "description": "A lounge armchair with figured walnut sides and a deep, upholstered seat.",
+      "src": "models/lounge-armchair.glb",
+      "silhouette": "chair",
+      "dimensions": {
+        "width": 78,
+        "depth": 96,
+        "height": 90,
+        "unit": "cm"
+      },
+      "ar": true,
+      "alt": "Modern lounge armchair 3D model",
+      "materialIndex": 1,
+      "colorLabel": "Upholstery",
+      "colors": [
+        {
+          "name": "Ivory",
+          "rgba": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "Slate blue",
+          "rgba": [
+            0.102,
+            0.156,
+            0.262,
+            1
+          ]
+        },
+        {
+          "name": "Forest",
+          "rgba": [
+            0.061,
+            0.114,
+            0.07,
+            1
+          ]
+        },
+        {
+          "name": "Clay",
+          "rgba": [
+            0.434,
+            0.15,
+            0.089,
+            1
+          ]
+        },
+        {
+          "name": "Charcoal",
+          "rgba": [
+            0.061,
+            0.061,
+            0.069,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-bed",
+      "title": "Double Bed",
+      "description": "A double bed with a channel-tufted headboard, layered linen bedding and an oak frame.",
+      "src": "models/double-bed.glb",
+      "silhouette": "bed",
+      "dimensions": {
+        "width": 184,
+        "depth": 216,
+        "height": 118,
+        "unit": "cm"
+      },
+      "ar": true,
+      "alt": "Double bed 3D model",
+      "materialIndex": 1,
+      "colorLabel": "Bedding",
+      "colors": [
+        {
+          "name": "Linen white",
+          "rgba": [
+            0.88,
+            0.863,
+            0.815,
+            1
+          ]
+        },
+        {
+          "name": "Sage",
+          "rgba": [
+            0.485,
+            0.552,
+            0.434,
+            1
+          ]
+        },
+        {
+          "name": "Dusty blue",
+          "rgba": [
+            0.223,
+            0.305,
+            0.429,
+            1
+          ]
+        },
+        {
+          "name": "Blush",
+          "rgba": [
+            0.644,
+            0.402,
+            0.376,
+            1
+          ]
+        },
+        {
+          "name": "Slate grey",
+          "rgba": [
+            0.156,
+            0.162,
+            0.188,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "title": "Modern Coffee Table",
+      "description": "An oval walnut coffee table with a lower shelf and slim black metal legs.",
+      "src": "models/coffee-table.glb",
+      "silhouette": "table",
+      "dimensions": {
+        "width": 121,
+        "depth": 63,
+        "height": 62,
+        "unit": "cm"
+      },
+      "ar": true,
+      "alt": "Modern coffee table 3D model",
+      "materialIndex": 0,
+      "colorLabel": "Wood finish",
+      "colors": [
+        {
+          "name": "Natural walnut",
+          "rgba": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "swatch": "#8a5a3c"
+        },
+        {
+          "name": "Smoked walnut",
+          "rgba": [
+            0.62,
+            0.5,
+            0.42,
+            1
+          ],
+          "swatch": "#5f4636"
+        },
+        {
+          "name": "Ebony",
+          "rgba": [
+            0.22,
+            0.2,
+            0.19,
+            1
+          ],
+          "swatch": "#2c2522"
+        }
+      ]
+    }
+  ],
+  "pricing": {
+    "currency": "PKR",
+    "note": "Final pricing depends on your catalog and how many pieces need modeling. Message us for a quote tailored to your range.",
+    "packages": [
+      {
+        "id": "starter",
+        "name": "Starter",
+        "skuLabel": "5 SKUs",
+        "featured": false,
+        "description": "A focused first collection, live on your store.",
+        "prices": {
+          "PKR": {
+            "setup": null,
+            "monthly": null
+          },
+          "USD": {
+            "setup": null,
+            "monthly": null
+          }
+        },
+        "features": [
+          "Up to 5 furniture products",
+          "Initial setup",
+          "3D model integration",
+          "First month hosting included",
+          "Monthly maintenance afterward"
+        ]
+      },
+      {
+        "id": "showroom-pro",
+        "name": "Showroom Pro",
+        "skuLabel": "15 SKUs",
+        "featured": true,
+        "badge": "Most Popular",
+        "description": "A full category, with AR for customers on supported phones.",
+        "prices": {
+          "PKR": {
+            "setup": null,
+            "monthly": null
+          },
+          "USD": {
+            "setup": null,
+            "monthly": null
+          }
+        },
+        "features": [
+          "Up to 15 furniture products",
+          "Initial setup",
+          "3D and AR integration",
+          "Monthly hosting",
+          "Catalog updates",
+          "Ongoing support"
+        ]
+      },
+      {
+        "id": "catalog-enterprise",
+        "name": "Catalog Enterprise",
+        "skuLabel": "40+ SKUs",
+        "featured": false,
+        "description": "Your whole range, digitized with a workflow built around it.",
+        "prices": {
+          "PKR": {
+            "setup": null,
+            "monthly": null
+          },
+          "USD": {
+            "setup": null,
+            "monthly": null
+          }
+        },
+        "features": [
+          "Large-scale catalog digitization",
+          "Custom 3D workflow",
+          "Priority support",
+          "Custom integration",
+          "Dedicated project discussion"
+        ]
+      }
+    ]
+  }
+}
